@@ -1,0 +1,77 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.App {
+    background: rgb(0, 255, 242);
+}
+
+.container {
+    max-width: 540px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 10px 30px;
+    background: rgb(224, 70, 70);
+    color: rgb(187, 187, 187);
+    box-shadow: 4px 4px 5px 1px rgb(158, 16, 16);
+    transition: .3s;
+}
+
+.btn.hover {
+    opacity: .7;
+}
+
+.mistakes {
+    color: blueviolet;
+}
+
+.sudoku {
+    border-collapse: collapse ;
+    border: 2px solid black;
+}
+
+.sudoku tr:nth-of-type(even) {
+    border-bottom: 2px solid black ;
+} 
+
+.sudoku td:nth-of-type(3) {
+    border-right: 2px solid black ;
+}
+
+.cell {
+    border: 1px solid gray;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cell-active {
+    background: rgb(15, 104, 107);
+}
